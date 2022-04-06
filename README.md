@@ -7,6 +7,9 @@ Technology:
 - Spring Boot Framework
 - Java
 
+IDE:
+-Intellij IDEA
+
 Dependency:
 - Spring Web
 - Spring Data Jpa
