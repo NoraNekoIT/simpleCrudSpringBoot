@@ -26,9 +26,9 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public void updateUser(User user) {
+    public void updateUser(User user) throws Exception {
         // check if the user with the passed id exists or not
-        User userDB = repository.findById(user.getUserId()).orElseThrow();
+        User userDB = repository.findById(user.getUserId()).orElseThrow(Exception::new);
         // If user exists then updated
         repository.save(user);
     }
