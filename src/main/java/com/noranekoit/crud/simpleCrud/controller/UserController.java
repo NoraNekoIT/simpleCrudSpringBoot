@@ -41,6 +41,9 @@ public class UserController {
             // log the error message
             System.out.println(ex.getMessage());
             return new ResponseEntity<String>(HttpStatus.NOT_FOUND);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new ResponseEntity<String>(HttpStatus.NOT_FOUND);
         }
     }
     // Delete user record
